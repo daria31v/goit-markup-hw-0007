@@ -97,7 +97,7 @@ div {
 .header__logo {
   margin-right: 93px;
 }
-.logo--accent {
+.logo--grey {
   color: var(--primery-text-color);
 }
 /* ****** */
@@ -178,7 +178,7 @@ div {
   margin-right: 10px;
 }
 /* *******MAIN******** */
-/ 
+
 /*******BUTTON******/
 .button {
   font-size: 16px;
@@ -239,45 +239,46 @@ div {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container.footer-down {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.footer-left-bloc {
+/* LEFT-BLOCK */
+.left-block {
   display: block;
   margin-right: 70px;
 }
-
-.logo-link.footer {
+.footer__logo {
   margin-bottom: 20px;
   display: block;
   margin-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.footer-address {
+.logo-white {
+  color: var(--white-color);
+}
+.address {
   font-style: normal;
   color: var(--footer-title);
 }
-.footer-link {
+.address__address-list {
+  margin-top: 9px;
+}
+.footer__item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+.address__link {
   color: var(--footer-text-color);
   letter-spacing: 0.02em;
   transition: color var(--transition);
 }
-.footer-link:hover,
-.footer-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--white-color);
 }
-.logo-accent-1 {
-  color: var(--white-color);
-}
-.footer-item:not(:last-child) {
-  display: block;
-  margin-bottom: 9px;
-}
-.footer-list {
-  margin-top: 9px;
-}
+
 /* ICONS FOOTER */
 .social-invate.link {
   display: flex;
@@ -314,19 +315,19 @@ div {
   font-weight: 700;
   font-size: 14px;
 }
-/* FORM signup*/
-.form {
+/* subscription*/
+.subscription {
   display: block;
   align-items: center;
   justify-content: center;
   margin-left: 93px;
   width: 570px;
 }
-.form-footer {
+.subscription__form {
   display: flex;
 }
 
-.footer-input-email {
+.form__input {
   min-width: 358px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -335,7 +336,7 @@ div {
   color: var(--white-color);
   padding: 15px 15px 15px 15px;
 }
-.footer-input-email::placeholder {
+.form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -347,7 +348,7 @@ div {
   width: 100%;
   height: 100%;
 }
-.btn-subscribe {
+.form__btn {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -359,7 +360,7 @@ div {
   margin-left: 12px;
   border: 0;
 }
-.btn-subsribe-text {
+.btn__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -372,11 +373,11 @@ div {
   color: var(--white-color);
   cursor: pointer;
 }
-.btn-subsribe-text::after {
+.btn__text::after {
   content: '';
   margin-left: 10px;
 }
-.btn-send {
+.btn__icon {
   fill: var(--white-color);
 }
 /* СТИЛИ ДЛЯ СТРАНИЦЫ СТУДИЯ */
