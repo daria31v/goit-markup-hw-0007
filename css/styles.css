@@ -21,7 +21,7 @@
   --overlay-card: rgba(33, 150, 243, 0.9);
   --font-form-modal: rgba(117, 117, 117, 0.5);
 }
-/* общее для двух страниц */
+/* RESET */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primery-text-color);
@@ -41,15 +41,13 @@ ul {
   margin: 0;
   padding: 0;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 img {
   display: block;
 }
+div {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -64,6 +62,7 @@ img {
 .list-link:active {
   color: var(--accent-bgr-btn-color);
 }
+
 .list-link.current {
   display: block;
   position: relative;
@@ -99,12 +98,25 @@ img {
 .list-link.header:active {
   color: var(--accent-bgr-btn-color);
 }
-
-div {
-  display: block;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
-
-/* HEADER */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/******* HEADER *******/
 .header.up {
   border-bottom: 1px solid #ececec;
 }
@@ -394,23 +406,12 @@ div {
   margin-left: auto;
   margin-right: auto;
 }
-/* features */
+/* FEATURES */
 .section-features {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 .list.features {
   display: flex;
   gap: 30px;
