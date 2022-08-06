@@ -56,7 +56,6 @@ div {
   text-decoration: none;
   color: var(--primery-text-color);
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,17 +76,15 @@ div {
   margin: 0 auto;
 }
 /******* HEADER *******/
-.header.up {
+.header {
   border-bottom: 1px solid #ececec;
 }
-.container.header {
+.header__container {
   display: flex;
   align-items: center;
   border: 0px;
 }
-
-.logo-link {
-  margin-right: 93px;
+.logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -97,35 +94,38 @@ div {
   color: #2196f3;
   text-decoration: none;
 }
-.logo-accent {
+.header__logo {
+  margin-right: 93px;
+}
+.logo--accent {
   color: var(--primery-text-color);
 }
-
-.container-list {
+/* ****** */
+.menu {
   font-weight: 500;
 }
-.header.list {
+.menu-list {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.header-nav {
+.menu__menu-list {
   margin-right: 50px;
   display: block;
 }
-.header-nav:last-child {
+.menu__menu-list:last-child {
   margin-right: 0;
 }
-.nav-link {
+.menu__link {
   letter-spacing: 0.02em;
   transition: color var(--transition);
 }
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
   color: var(--accent-bgr-btn-color);
 }
-.nav-link.current {
+.menu__link--current {
   display: block;
   position: relative;
   color: var(--accent-bgr-btn-color);
@@ -134,7 +134,7 @@ div {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-link.current::after {
+.menu__link--current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -145,43 +145,41 @@ div {
   background: var(--accent-bgr-btn-color);
   border-radius: 2px;
 }
-.nav-link.header {
+/* CONTACTS */
+.menu-contacts {
   display: flex;
   align-items: center;
+  margin-left: auto;
+}
+.menu-contacts__item {
+  margin-right: 50px;
+}
+.menu-contacts__item:last-child {
+  margin-right: 0;
+}
+.menu-contacts__menu-link {
   color: var(--main-text);
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--transition);
+  display: flex;
+  align-items: center;
+  border: 0px;
 }
-.nav-link.header:hover,
-.nav-link.header:focus,
-.nav-link.header:active {
+.menu-contacts__menu-link:hover,
+.menu-contacts__menu-link:focus,
+.menu-contacts__menu-link:active {
   color: var(--accent-bgr-btn-color);
 }
-/* CONTACTS */
-.header-contact {
-  display: flex;
-  align-items: center;
-}
-.list.header-contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.header-contact-item {
-  margin-right: 50px;
-}
-.header-contact-item:last-child {
-  margin-right: 0;
-}
-.header-icon {
+
+.header-contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 /* *******MAIN******** */
 / 
-/* кнопки */
+/*******BUTTON******/
 .button {
   font-size: 16px;
   line-height: 1.63;
