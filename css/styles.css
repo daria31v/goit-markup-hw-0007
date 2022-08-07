@@ -417,10 +417,11 @@ div {
   transition: color var(--transition), border var(--transition);
 }
 .clients__link:hover,
-.clients__ink:focus {
+.clients__link:focus {
   color: var(--accent-bgr-btn-color);
   border: 1px solid var(--accent-bgr-btn-color);
 }
+
 .clients__icon {
   fill: currentColor;
 }
