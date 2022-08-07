@@ -2,3 +2,6 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section-portfolio__container{
+    @extend %container;
+}

@@ -5,12 +5,14 @@
     font-size: 14px;
     margin-bottom: 20px;
 }
-.joining__social-list {
+.joining__joinin-list {
+    @extend %reset-list;
     display: flex;
     gap: 10px;
 }
 
-.social-list__link {
+.joinin-list__link {
+    @extend %reset-link;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +30,7 @@
         fill: var(--white-color);}
 }
     
-.social-list__icon {
+.joinin-list__icon {
     fill: var(--white-color);
     transition: fill var(--transition);
 }

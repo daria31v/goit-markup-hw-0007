@@ -1,10 +1,12 @@
-.list.project {
+.main__project {
+    @extend %reset-list;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .project-link {
+    @extend %reset-link;
     display: block;
     transition: box-shadow var(--transition);
 

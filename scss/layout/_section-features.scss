@@ -3,7 +3,11 @@
     padding-bottom: 47px;
 }
 
-.list.features {
+.features{
+    @extend %container;
+}
+.features-list {
+    @extend %reset-list;
     display: flex;
     gap: 30px;
 }

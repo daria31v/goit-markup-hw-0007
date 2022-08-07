@@ -3,14 +3,11 @@
 }
 
 .header__container {
+    @extend %container;
     display: flex;
     align-items: center;
     border: 0px;
 }
 .header__logo {
     margin-right: 93px;
-}
-.header-contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
 }

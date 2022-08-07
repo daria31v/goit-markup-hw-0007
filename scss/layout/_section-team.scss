@@ -3,13 +3,17 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.team{
+    @extend %container;
+}
 
 .team-cont {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.list.team {
+.team-list {
+    @extend %reset-list;
     gap: 30px;
     display: flex;
     text-align: center;
@@ -30,6 +34,7 @@
 }
 
 .social {
+    @extend %reset-list;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +42,8 @@
     margin-top: 16px;
 }
 
-.social-profile {
+.social-link {
+    @extend %reset-link;
     display: flex;
     align-items: center;
     justify-content: center;
