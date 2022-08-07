@@ -436,7 +436,7 @@ div {
   align-items: baseline;
 }
 /****** ADDRESS-BLOCK******/
-.address-block {
+.footer__address {
   display: block;
   margin-right: 70px;
 }
@@ -471,7 +471,7 @@ div {
   color: var(--white-color);
 }
 /* ****JOINING***** */
-.joining-block__lable {
+.joining__lable {
   color: var(--footer-title);
   text-transform: uppercase;
   font-weight: 700;
@@ -485,7 +485,7 @@ div {
   font-size: 14px;
   margin-bottom: 20px;
 }
-.joining-block__social-list {
+.joining__social-list {
   display: flex;
   gap: 10px;
 }
