@@ -1,7 +1,7 @@
 .button {
     font-size: 16px;
     line-height: 1.63;
-    font-family: inherit;
+    font-family: var(--btn-font);
     background-color: var(--bgr-button-secondary);
     cursor: pointer;
     padding: 6px 22px;
