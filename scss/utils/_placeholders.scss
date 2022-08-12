@@ -1,9 +1,22 @@
 %container {
-    width: 1200px;
+    
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media screen and (min-width: 480px){
+        width: 450px;        
+    }
+    @media screen and (min-width: 768px) {
+        width: 738px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
+
 
 %reset-link{
     text-decoration: none;

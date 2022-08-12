@@ -1,11 +1,27 @@
 .subscription {
     display: block;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 153px;
+    margin-top: 60px;
+    
+  @media screen and (min-width: 1200px){
     margin-left: 93px;
     width: 570px;
+    align-items: center;
+    justify-content: center;
+    }
+
 }
 
 .subscription__form {
+    display: block;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    
+@media screen and (min-width: 1200px) {
     display: flex;
+    gap: 0;}
 }

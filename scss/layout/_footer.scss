@@ -1,10 +1,29 @@
 .footer {
+    @extend %container;
     background-color: var(--footer-bgr-color);
+    height: 603px;
+
+    @media screen and (min-width: 768px) {
+        height: 463px;
+    }
+              
+    @media screen and (min-width: 1200px) {
+    height: auto;}
+}
+
+
+.footer__container {
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.footer__container {
-    @extend %container;
+
+    @media screen and (min-width: 768px){
     display: flex;
-    align-items: baseline;
+    align-items: baseline;}
+       
+    @media screen and (min-width: 1200px){ 
+    display: flex;
+    align-items: baseline;}
 }

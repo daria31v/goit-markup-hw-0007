@@ -1,14 +1,20 @@
 .footer__address {
     display: block;
-    margin-right: 70px;
+    
+    @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    margin-right: 70px;}
 }
 
 .footer__logo {
-    margin-bottom: 20px;
     display: block;
     margin-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 .address {
     font-style: normal;
@@ -16,11 +22,19 @@
 }
 .address__address-list {
     @extend %reset-list;
+    margin-top: 8px;
+    @media screen and (min-width: 1200px) {
     margin-top: 9px;
+    }
+
+
 }
 .footer__item:not(:last-child) {
     display: block;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+    }
 }
 .address__link {
     @extend %reset-link;
